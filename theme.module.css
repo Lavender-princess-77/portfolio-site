@@ -1,0 +1,123 @@
+.bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe6fa 20%, #d6c4f9 80%);
+  animation: gradientMove 10s ease-in-out infinite alternate;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+  box-shadow: 0 0 32px #c088db80;
+  border-radius: 2rem;
+  background: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.8rem;
+  text-align: center;
+  color: #a864c7;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.section {
+  margin: 2rem 0;
+  background: #f7e6ff;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 20px #d3c4f960;
+  padding: 1.5rem;
+  position: relative;
+  animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px);}
+  80% { opacity: 0.8; }
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.editBtn, .saveBtn, .loginBtn, .logoutBtn, .photoBtn {
+  background: linear-gradient(90deg, #f8b3e9, #a864c7);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  margin: 0.5rem 0.4rem;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 2px 8px #c088db44;
+  transition: background 0.2s;
+}
+.editBtn:hover, .saveBtn:hover, .loginBtn:hover, .logoutBtn:hover, .photoBtn:hover {
+  background: linear-gradient(90deg, #a864c7, #f8b3e9);
+}
+
+.input {
+  width: 90%;
+  border-radius: 0.7rem;
+  border: 2px solid #a864c7;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.adminForm, .adminBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+.adminBanner {
+  background: #d6c4f9;
+  color: #6c3483;
+  border-radius: 1rem;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+}
+
+.errorMsg {
+  color: #e94370;
+  font-size: 1rem;
+}
+
+.photoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.profilePhoto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px #d6c4f980;
+  border: 3px solid #a864c7;
+  background: #fff;
+}
+.photoEdit {
+  margin-top: 0.6rem;
+}
+.photoBtn {
+  font-size: 0.98rem;
+}
+
+a {
+  color: #a864c7;
+  text-decoration: underline dashed;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #e94370;
+}
